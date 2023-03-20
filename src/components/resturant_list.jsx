@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-class Counter extends Component {
+class ResturantList extends Component {
     constructor() {
         super();
         this.state = {
@@ -75,4 +75,4 @@ const toRadian = n => (n * Math.PI) / 180
 
 
 
-export default Counter;
+export default ResturantList;
