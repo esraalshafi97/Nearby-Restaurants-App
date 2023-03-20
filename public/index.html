@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+      <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSppklhRjH-gjsLaikHpaQ9POE5L_WJpQ&libraries=places" -->
+    <!-- async defer></script> -->
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -24,11 +26,51 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+	<title>Restaurant Website</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		header {
+			background-image: url('resturant.jpeg');
+			background-size: cover;
+			height: 350px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			animation: fadeIn 2s;
+		}
+		h1 {
+			/* color: white; */
+			font-size: 4rem;
+			text-align: center;
+			text-shadow: 2px 2px 4px #000000;
+
+    font-size: 2.5rem;
+    color: #46db68;
+    /* margin: 50px; */
+    padding: 70px 0;
+		}
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1 style="color: #46db68;" >Welcome to Nearby Restaurants App</h1>
+	</header>
     <div id="root"></div>
+    <div id="map"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
